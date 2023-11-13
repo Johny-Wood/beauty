@@ -1,3 +1,4 @@
+'use client'
 import { createI18nClient } from 'next-international/client'
 
 export const {
@@ -18,5 +19,5 @@ export const {
     // basePath: '/base',
     // Uncomment to use custom segment name
     // segmentName: 'locale',
-  }
+  },
 )
