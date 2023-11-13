@@ -20,7 +20,7 @@ const Button: React.FC<Props> = ({
   children,
 }) => {
   const classes = clsx(
-    'flex justify-center items-center gap-x-[10px] py-[10px] px-[30px] w-full text-sm text-gray-50 transition-all rounded-md hover:shadow-default',
+    'flex justify-center items-center gap-x-[10px] md:gap-x-[7px] md:whitespace-nowrap py-[10px] px-[30px] w-full text-sm text-gray-50 transition-all rounded-md hover:shadow-default',
     `${bgColor}`,
     bgColor === 'bg-teal-800' && 'hover:bg-teal-700',
     bgColor === 'bg-teal-800' && 'active:bg-teal-900',

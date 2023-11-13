@@ -4,7 +4,7 @@ import { useMemo } from 'react'
 // 40 12 180 60  160/60
 
 export default function Logo({ width = 97 }) {
-  const height = useMemo(() => width / 3.375, [width])
+  const height = useMemo(() => width / 2.125, [width])
 
   return (
     <Link href="/" className="block" aria-label="System Beauty Concept">

@@ -43,6 +43,9 @@ module.exports = {
           800: '#387C81',
           900: '#1B5D61',
         },
+        orange: {
+          500: '#CFCA46',
+        },
       },
       boxShadow: {
         xs: '0 0 0 1px rgba(0, 0, 0, 0.16)',

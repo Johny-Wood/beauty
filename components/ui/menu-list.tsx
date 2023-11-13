@@ -27,7 +27,7 @@ const MenuList = () => {
   const scopedT = useScopedI18n("navigation")
 
   return (
-    <ul className='flex flex-col items-center gap-y-8'>
+    <ul className='flex flex-col md:flex-row md:justify-between items-center gap-y-8 md:w-full md:max-w-[410px]'>
       {links.map((item) => (
         <li>
           <Link href={item.href}>{scopedT(item.name)}</Link>

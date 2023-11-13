@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-size: 14px;
+
+  @media screen and (min-width: 1600px) {
+    font-size: 18px;
+  }
+}
+
 .form-input:focus,
 .form-textarea:focus,
 .form-multiselect:focus,
