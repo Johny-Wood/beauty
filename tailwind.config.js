@@ -10,10 +10,10 @@ module.exports = {
       colors: {
         gray: {
           50: '#EEF8F9',
-          100: '#FBFBFB',
+          100: '#F5F5F5',
           200: '#EAEAEA',
           300: '#DFDFDF',
-          400: '#999999',
+          400: '#678385',
           500: '#579196',
           600: '#666666',
           700: '#4C4C4C',
@@ -37,7 +37,7 @@ module.exports = {
           300: '#6CE2EA',
           400: '#15CAD6',
           500: '#1AA8B1',
-          600: '#319795',
+          600: '#4C898E',
           // 700: '#2C7A7B',
           700: '#479297',
           800: '#387C81',
@@ -58,6 +58,13 @@ module.exports = {
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.04)',
         outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
         none: 'none',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/images/hero-bg.svg')",
+        'hero-pattern-desktop': "url('/images/hero-bg-desktop.svg')",
+        'hero-pattern-right-desktop':
+          "url('/images/hero-bg-right-desktop.svg')",
+        'contacts-pattern': "url('/images/contacts-bg.svg')",
       },
       spacing: {
         '9/16': '56.25%',
@@ -132,5 +139,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('tailwindcss-animate')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwindcss-animate'),
+    require('tailwind-scrollbar-hide'),
+  ],
 }

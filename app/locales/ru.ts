@@ -21,6 +21,24 @@ export default {
   headerTop: {
     address: 'Дубининская ул., 9, cтр. 1, Москва, Россия, 115054',
   },
+  hero: {
+    callToAction: 'Широкий спектр услуг для ухода за вашим телом',
+    desc: 'Наша клиника предооставляет обширный перечень услуг, который поможет в уходе за вашим телом, и сохранит естественную красоту:',
+  },
+  contactsBlock: {
+    apointment: 'Записаться на прием',
+    callUs: 'Или позвоните нам',
+  },
+  servicesBlock: {
+    laserEpilation: 'лазерная эпиляция',
+    alexandrite: 'трехволновой диод александрит',
+    cosmetologist: 'косметолог/дерматолог',
+    сorrection: 'коррекция лица и тела',
+    darsonval: 'дарсонваль',
+    aikun: 'айкун',
+    hydroFacial: 'hydro facial',
+    pilates: 'пилатес',
+  },
 
   // welcome: 'Hello {name}!',
   // 'about.you': 'Hello {name}! You have {age} yo',

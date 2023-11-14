@@ -27,6 +27,8 @@ const Button: React.FC<Props> = ({
     bgColor === 'bg-teal-400' && 'hover:bg-teal-300',
     bgColor === 'bg-teal-400' && 'active:bg-teal-500',
     bgColor === 'bg-teal-400' && 'text-[#fff]',
+    bgColor === 'bg-[#FFFFFF]' && 'text-teal-800',
+    bgColor === 'bg-[#FFFFFF]' && 'active:bg-gray-100',
     icon && 'row-gap-[10px]',
   )
   return (

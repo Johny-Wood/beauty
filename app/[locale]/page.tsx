@@ -5,9 +5,12 @@
 // import Prices from '@/components/prices'
 // import Testimonials from '@/components/testimonials'
 
+import Hero from '@/components/hero'
+
 export default function Home() {
   return (
     <>
+      <Hero />
       {/* <Hero /> */}
       {/* <Features /> */}
       {/* <FeaturesBlocks /> */}

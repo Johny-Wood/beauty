@@ -12,7 +12,7 @@ export default {
     sales: 'Sales',
   },
   mobileMenu: {
-    callToAction: "Enjoy",
+    callToAction: 'Enjoy',
   },
   buttons: {
     callback: 'Callback',
@@ -21,6 +21,25 @@ export default {
   headerTop: {
     address: 'England',
   },
+  hero: {
+    callToAction: 'CallToAction',
+    desc: 'Description lorem',
+  },
+  contactsBlock: {
+    apointment: 'Apointment',
+    callUs: 'CallUs',
+  },
+  servicesBlock: {
+    laserEpilation: 'Laser',
+    alexandrite: 'Alexandrite',
+    cosmetologist: 'Cosmetologist',
+    сorrection: 'Corretion',
+    darsonval: 'Darsonval',
+    aikun: 'Ikun',
+    hydroFacial: 'Hydro',
+    pilates: 'Pilates',
+  },
+
   // welcome: 'Hello {name}!',
   // 'about.you': 'Hello {name}! You have {age} yo',
   // 'scope.test': 'A scope',
