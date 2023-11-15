@@ -12,7 +12,7 @@ const HeaderTop = () => {
   const scopedT = useScopedI18n('headerTop')
 
   return (
-    <div className="flex flex-col md:flex-row md:gap-x-[35px] py-8 px-6 bg-gray-50 shadow-[0px_4px_20px_0px_rgba(56,124,129,0.10)] text-teal-400">
+    <div className="max-w-[1920px] mx-auto w-full flex flex-col md:flex-row md:gap-x-[35px] py-[13px] md:py-[10px] 3xl:py-[14px] px-6 md:px-0 bg-gray-50 shadow-[0px_4px_20px_0px_rgba(56,124,129,0.10)] text-teal-400">
       <div className="flex justify-between md:gap-x-8 mb-4">
         <LinkIcon href="#" text="navigation.buy" sep>
           <BuyIcon />

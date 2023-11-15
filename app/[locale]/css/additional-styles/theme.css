@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  font-family: 'Manrope', sans-serif;
   font-size: 14px;
 
   @media screen and (min-width: 1600px) {
@@ -17,6 +18,15 @@ body {
 .form-checkbox:focus,
 .form-radio:focus {
   @apply ring-0;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat.ttf');
 }
 
 /* Hamburger button */

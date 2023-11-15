@@ -14,7 +14,7 @@ const Hero = () => {
   const isMobile = useIsMobile()
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen max-w-[1920px] mx-auto">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center md:gap-x-[50px] pt-[48px] bg-hero-pattern md:bg-hero-pattern-desktop md:bg-bottom md:bg-cover md:bg-no-repeat md:pt-[22px] md:pb-[55px] md:px-[100px]">
         {!isMobile && (
           <>

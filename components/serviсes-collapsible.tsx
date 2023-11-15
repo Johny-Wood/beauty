@@ -23,18 +23,18 @@ const ServicesCollapsible = () => {
           isCollapsed && 'max-h-full',
         )}
       >
-        <ServicesItem>{scopedT('laserEpilation')}</ServicesItem>
-        <ServicesItem>{scopedT('alexandrite')}</ServicesItem>
-        <ServicesItem>{scopedT('cosmetologist')}</ServicesItem>
-        <ServicesItem>{scopedT('сorrection')}</ServicesItem>
-        <ServicesItem>{scopedT('darsonval')}</ServicesItem>
-        <ServicesItem>{scopedT('aikun')}</ServicesItem>
-        <ServicesItem>{scopedT('hydroFacial')}</ServicesItem>
-        <ServicesItem>{scopedT('pilates')}</ServicesItem>
-        <ServicesItem>{scopedT('laserEpilation')}</ServicesItem>
-        <ServicesItem>{scopedT('alexandrite')}</ServicesItem>
-        <ServicesItem>{scopedT('cosmetologist')}</ServicesItem>
-        <ServicesItem>{scopedT('сorrection')}</ServicesItem>
+        <ServicesItem>{scopedT('laserEpilation.title')}</ServicesItem>
+        <ServicesItem>{scopedT('alexandrite.title')}</ServicesItem>
+        <ServicesItem>{scopedT('cosmetologist.title')}</ServicesItem>
+        <ServicesItem>{scopedT('correction.title')}</ServicesItem>
+        <ServicesItem>{scopedT('darsonval.title')}</ServicesItem>
+        <ServicesItem>{scopedT('aikun.title')}</ServicesItem>
+        <ServicesItem>{scopedT('hydroFacial.title')}</ServicesItem>
+        <ServicesItem>{scopedT('pilates.title')}</ServicesItem>
+        <ServicesItem>{scopedT('laserEpilation.title')}</ServicesItem>
+        <ServicesItem>{scopedT('alexandrite.title')}</ServicesItem>
+        <ServicesItem>{scopedT('cosmetologist.title')}</ServicesItem>
+        <ServicesItem>{scopedT('correction.title')}</ServicesItem>
       </div>
       <button
         className={clsx(

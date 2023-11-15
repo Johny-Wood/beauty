@@ -1,0 +1,48 @@
+.player-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .player-wrapper {
+    justify-content: flex-start;
+    max-width: 644px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .player-wrapper {
+    max-width: 840px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .player-wrapper div {
+    max-width: 840px !important;
+    height: 420px !important;
+  }
+}
+
+.react-player__preview {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.player-wrapper div iframe html body {
+  justify-content: flex-start;
+}
+
+.react-player {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.react-player > div {
+  position: absolute;
+  /* justify-content: flex-start; */
+  /* left: 0; */
+}

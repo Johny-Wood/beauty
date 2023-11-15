@@ -17,8 +17,8 @@ const Header = (props: Props) => {
   const isMobile = useIsMobile()
 
   return (
-    <header className="relative">
-      <div className="flex justify-between md:flex-col px-4 py-3 md:px-0 md:py-0">
+    <header className="relative max-w-[1920px] mx-auto w-full">
+      <div className="flex justify-between md:flex-col px-4 md:px-20 3xl:px-[100px] py-3 md:py-0">
         {isMobile && (
           <>
             <Logo />
@@ -29,7 +29,7 @@ const Header = (props: Props) => {
         {!isMobile && (
           <>
             <HeaderTop />
-            <div className="flex justify-between gap-x-[10px] px-4 py-3">
+            <div className="flex justify-between gap-x-[10px] py-3">
               <Logo width={102} />
 
               <MenuList />

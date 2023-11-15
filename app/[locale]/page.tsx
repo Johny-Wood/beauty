@@ -6,11 +6,13 @@
 // import Testimonials from '@/components/testimonials'
 
 import Hero from '@/components/hero'
+import About from '@/components/about'
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <About />
       {/* <Hero /> */}
       {/* <Features /> */}
       {/* <FeaturesBlocks /> */}

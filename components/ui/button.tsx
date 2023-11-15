@@ -8,6 +8,10 @@ type Props = {
   onClick?: () => void
   icon?: string
   bgColor: string
+  color?: string
+  border?: boolean
+  borderColor?: string
+  width?: string
   children: React.ReactNode
 }
 
@@ -17,11 +21,18 @@ const Button: React.FC<Props> = ({
   onClick,
   icon,
   bgColor,
+  color,
+  border,
+  borderColor,
+  width,
   children,
 }) => {
   const classes = clsx(
-    'flex justify-center items-center gap-x-[10px] md:gap-x-[7px] md:whitespace-nowrap py-[10px] px-[30px] w-full text-sm text-gray-50 transition-all rounded-md hover:shadow-default',
+    'flex justify-center items-center gap-x-[10px] md:gap-x-[7px] md:whitespace-nowrap py-[10px] px-[30px] font-semibold text-sm text-gray-50 transition-all rounded-md hover:shadow-default',
+    width ? width : 'w-full',
     `${bgColor}`,
+    `${color}`,
+    border && borderColor && `${borderColor} border-[1px]`,
     bgColor === 'bg-teal-800' && 'hover:bg-teal-700',
     bgColor === 'bg-teal-800' && 'active:bg-teal-900',
     bgColor === 'bg-teal-400' && 'hover:bg-teal-300',

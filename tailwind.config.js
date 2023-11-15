@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
@@ -47,6 +49,14 @@ module.exports = {
           500: '#CFCA46',
         },
       },
+      fontFamily: {
+        montserrat: [
+          "'Montserrat'",
+          'sans-serif',
+          ...defaultTheme.fontFamily.sans,
+        ],
+        manrope: ["'Manrope'", 'sans-serif', ...defaultTheme.fontFamily.sans],
+      },
       boxShadow: {
         xs: '0 0 0 1px rgba(0, 0, 0, 0.16)',
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.16)',
@@ -65,6 +75,9 @@ module.exports = {
         'hero-pattern-right-desktop':
           "url('/images/hero-bg-right-desktop.svg')",
         'contacts-pattern': "url('/images/contacts-bg.svg')",
+        'about-bg': "url('/images/about-bg.svg')",
+        'about-mobile-bg': "url('/images/about-bg-mobile.svg')",
+        'about-3xl-bg': "url('/images/about-bg-3xl.svg')",
       },
       spacing: {
         '9/16': '56.25%',
@@ -124,6 +137,9 @@ module.exports = {
       },
       scale: {
         98: '.98',
+      },
+      screens: {
+        '3xl': '1920px',
       },
       animation: {
         float: 'float 3s ease-in-out infinite',

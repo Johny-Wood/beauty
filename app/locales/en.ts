@@ -30,14 +30,56 @@ export default {
     callUs: 'CallUs',
   },
   servicesBlock: {
-    laserEpilation: 'Laser',
-    alexandrite: 'Alexandrite',
-    cosmetologist: 'Cosmetologist',
-    сorrection: 'Corretion',
-    darsonval: 'Darsonval',
-    aikun: 'Ikun',
-    hydroFacial: 'Hydro',
-    pilates: 'Pilates',
+    laserEpilation: {
+      title: 'лазерная эпиляция',
+    },
+    alexandrite: {
+      title: 'трехволновой диод александрит',
+    },
+    cosmetologist: {
+      title: 'косметолог/дерматолог',
+    },
+    correction: {
+      title: 'коррекция лица и тела',
+    },
+    darsonval: {
+      title: 'дарсонваль',
+    },
+    aikun: {
+      title: 'айкун',
+    },
+    hydroFacial: {
+      title: 'hydro facial',
+    },
+    pilates: {
+      title: 'пилатес',
+    },
+    hairCut: {
+      title: 'Стрижки',
+      desc: 'Профессиональное и тщательные стрижки волос с целью создания или изменения прически, подчеркивания стиля и общего внешнего вида.',
+    },
+    cleanFace: {
+      title: 'Чистка лица',
+      desc: 'Уход за кожей, включающий глубокую очистку пор, удаление загрязнений и мертвых клеток, для достижения более здорового и свежего внешнего вида кожи лица.',
+    },
+    massage: {
+      title: 'Ручной массаж',
+      desc: 'Манипуляции на теле клиента с целью расслабления мышц, улучшения циркуляции крови и общего физического и психологического комфорта.',
+    },
+
+    // laserEpilation: 'Laser',
+    // alexandrite: 'Alexandrite',
+    // cosmetologist: 'Cosmetologist',
+    // сorrection: 'Corretion',
+    // darsonval: 'Darsonval',
+    // aikun: 'Ikun',
+    // hydroFacial: 'Hydro',
+    // pilates: 'Pilates',
+  },
+  about: {
+    titleAccent: 'Accent ',
+    title: 'Title',
+    subtitle: 'subtitle',
   },
 
   // welcome: 'Hello {name}!',
