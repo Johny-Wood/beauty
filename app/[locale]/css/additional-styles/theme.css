@@ -20,6 +20,10 @@ body {
   @apply ring-0;
 }
 
+li {
+  @apply list-none;
+}
+
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope.ttf');

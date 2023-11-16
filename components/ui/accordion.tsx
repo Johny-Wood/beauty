@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Button from '../ui/button'
+import clsx from 'clsx'
 
 type AccordionpProps = {
   children: React.ReactNode
@@ -31,16 +32,29 @@ export default function Accordion({
   }, [accordion])
 
   return (
-    <Component>
+    <Component
+      className={clsx(
+        !accordionOpen && 'max-h-[55px]',
+        accordionOpen && 'max-h-full',
+        'h-full',
+      )}
+    >
       <button
-        className="relative flex items-center p-5 w-full py-5 font-montserrat font-semibold text-teal-800 text-sm bg-[#FFFFFF] rounded-lg shadow-outline"
+        className={clsx(
+          'relative flex items-center p-5 w-full py-[11.5px] font-montserrat font-semibold text-teal-800 text-sm text-left bg-[#FFFFFF] rounded-lg shadow-outline',
+          !accordionOpen && 'h-full',
+        )}
         onClick={(e) => {
           e.preventDefault()
           setAccordionOpen(!accordionOpen)
         }}
         aria-expanded={accordionOpen}
       >
-        {icon && <span className="mr-5">{icon}</span>}
+        {icon && (
+          <span className="flex justify-center items-center mr-5 md:mr-4 3xl:mr-8 md:w-6 md:h-6 3xl:w-8 3xl:h-8">
+            {icon}
+          </span>
+        )}
         <span className="mr-auto">{title}</span>
 
         <svg
@@ -79,7 +93,8 @@ export default function Accordion({
             border
             borderColor="border-teal-400"
             color="text-teal-400"
-            href={link}
+            href={href}
+            width="md:max-w-[205px]"
           >
             {link}
           </Button>

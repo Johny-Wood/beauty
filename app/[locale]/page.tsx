@@ -7,12 +7,14 @@
 
 import Hero from '@/components/hero'
 import About from '@/components/about'
+import Services from '@/components/sections/services/services'
 
 export default function Home() {
   return (
     <>
       <Hero />
       <About />
+      <Services />
       {/* <Hero /> */}
       {/* <Features /> */}
       {/* <FeaturesBlocks /> */}

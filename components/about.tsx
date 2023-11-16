@@ -10,6 +10,7 @@ import AccentText from './ui/typography/accent-text'
 import CoveredCard from './ui/covered-card'
 import Slider from './ui/slider/slider'
 import Button from './ui/button'
+import Collaborations from './collaborations'
 
 const About = () => {
   const scopedT = useScopedI18n('about')
@@ -83,10 +84,8 @@ const About = () => {
           />
         </Slider>
       </div>
-      <div className="flex flex-col gap-y-2 w-full md:flex-row md:justify-center gap-x-[10px]">
-        <Button width="w-full md:w-fit" bgColor="bg-[rgba(21,202,214,90)]">
-          {scopedButtonsT('discuss')}
-        </Button>
+
+      <div className="flex flex-col gap-y-2 w-full md:flex-row md:justify-center gap-x-[10px] mb-[60px]">
         <Button
           width="w-full md:w-fit"
           bgColor="bg-[#E5FDFF]"
@@ -96,6 +95,13 @@ const About = () => {
         >
           {scopedButtonsT('allServices')}
         </Button>
+        <Button width="w-full md:w-fit" bgColor="bg-[rgba(21,202,214,90)]">
+          {scopedButtonsT('discuss')}
+        </Button>
+      </div>
+
+      <div className="md:w-full">
+        <Collaborations />
       </div>
     </section>
   )

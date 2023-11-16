@@ -35,7 +35,7 @@ module.exports = {
         },
         teal: {
           100: '#E6FFFA',
-          200: '#B2F5EA',
+          200: '#37A1A8',
           300: '#6CE2EA',
           400: '#15CAD6',
           500: '#1AA8B1',
@@ -66,7 +66,7 @@ module.exports = {
         xl: '0 20px 25px -5px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.02)',
         '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.15)',
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.04)',
-        outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
+        outline: '0px 0px 10px 0px rgba(56, 124, 129, 0.30)',
         none: 'none',
       },
       backgroundImage: {
@@ -78,15 +78,16 @@ module.exports = {
         'about-bg': "url('/images/about-bg.svg')",
         'about-mobile-bg': "url('/images/about-bg-mobile.svg')",
         'about-3xl-bg': "url('/images/about-bg-3xl.svg')",
+        'services-mobile-bg': "url('/images/services-bg-mobile.svg')",
       },
       spacing: {
         '9/16': '56.25%',
         '3/4': '75%',
         '1/1': '100%',
       },
-      fontFamily: {
-        inter: ['var(--font-inter)', 'sans-serif'],
-      },
+      // fontFamily: {
+      //   inter: ['var(--font-inter)', 'sans-serif'],
+      // },
       fontSize: {
         xs: '0.75rem',
         sm: '0.875rem',

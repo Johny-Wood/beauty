@@ -14,7 +14,7 @@ const Title: React.FC<Props> = ({ textCenter, color, maxWidth, children }) => {
       className={clsx(
         maxWidth && maxWidth,
         textCenter && 'text-center',
-        color && color,
+        color ? color : 'text-teal-900',
       )}
     >
       <h3 className="text-xl md:text-[35px] 3xl:text-[50px] font-extrabold leading-[115.1%]">

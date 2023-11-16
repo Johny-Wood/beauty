@@ -19,6 +19,7 @@ export default {
     apointment: 'Записаться',
     discuss: 'Обсудить прием',
     allServices: 'Все услуги',
+    learnMore: 'Узнать больше',
   },
   headerTop: {
     address: 'Дубининская ул., 9, cтр. 1, Москва, Россия, 115054',
@@ -32,8 +33,14 @@ export default {
     callUs: 'Или позвоните нам',
   },
   servicesBlock: {
+    section: {
+      titleAccent: 'Узнайте больше об ',
+      title: 'интересующей услуге',
+    },
     laserEpilation: {
       title: 'Лазерная эпиляция',
+      longDesc:
+        'Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.',
     },
     alexandrite: {
       title: 'Трехволновой диод александрит',
@@ -69,6 +76,27 @@ export default {
       title: 'Ручной массаж',
       desc: 'Манипуляции на теле клиента с целью расслабления мышц, улучшения циркуляции крови и общего физического и психологического комфорта.',
     },
+    emsTesla: {
+      title: 'Ems tesla',
+    },
+    ultrasoundClean: {
+      title: 'Ультразвуковая чистка',
+    },
+    bodySculpture: {
+      title: 'Скульптура тела',
+    },
+    weightLoss: {
+      title: 'Похудение',
+    },
+    lymphaticDrainage: {
+      title: 'Лифодренаж',
+    },
+    trichology: {
+      title: 'Трихология',
+    },
+    hairColoring: {
+      title: 'Окрашивание',
+    },
     // laserEpilation: 'лазерная эпиляция',
     // alexandrite: 'трехволновой диод александрит',
     // cosmetologist: 'косметолог/дерматолог',
@@ -82,6 +110,9 @@ export default {
     titleAccent: 'Посмотрите ',
     title: 'краткое видео о нас',
     subtitle: 'Убедитесь в нашей профессиональности и современном подходе',
+  },
+  collaborations: {
+    title: 'О нас говорят',
   },
 
   // welcome: 'Hello {name}!',
