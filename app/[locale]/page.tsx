@@ -1,13 +1,7 @@
-// import Hero from '@/components/hero'
-// import Features from '@/components/features'
-// import FeaturesBlocks from '@/components/features-blocks'
-// import Results from '@/components/results'
-// import Prices from '@/components/prices'
-// import Testimonials from '@/components/testimonials'
-
-import Hero from '@/components/hero'
+import Hero from '@/components/sections/hero/hero'
 import About from '@/components/about'
 import Services from '@/components/sections/services/services'
+import Experts from '@/components/sections/experts/experts'
 
 export default function Home() {
   return (
@@ -15,12 +9,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      {/* <Hero /> */}
-      {/* <Features /> */}
-      {/* <FeaturesBlocks /> */}
-      {/* <Results /> */}
-      {/* <Prices /> */}
-      {/* <Testimonials /> */}
+      <Experts />
     </>
   )
 }

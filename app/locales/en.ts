@@ -17,6 +17,7 @@ export default {
   buttons: {
     callback: 'Callback',
     apointment: 'Apointment',
+    chooseService: 'Выбрать услугу',
   },
   headerTop: {
     address: 'England',

@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import React, { useState } from 'react'
-import ServicesItem from './utils/services-item'
 import { useScopedI18n } from '@/app/locales/client'
+import ServicesItem from './services-item'
 
 const ServicesCollapsible = () => {
   const scopedT = useScopedI18n('servicesBlock')

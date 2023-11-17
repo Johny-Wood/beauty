@@ -33,9 +33,9 @@ const CoveredCard: React.FC<Props> = ({
             />
 
             <div className="inline-flex gap-[8px] relative flex-[0_0_auto] flex-col items-start">
-              <div className="w-fit mt-[-1.00px] font-montserrat text-teal-800 text-[16px] 3xl:text-[18px] text-center relative font-semibold tracking-[0] leading-[normal]">
+              <h4 className="w-fit mt-[-1.00px] font-montserrat text-teal-800 text-[16px] 3xl:text-[18px] text-center relative font-semibold tracking-[0] leading-[normal]">
                 {title}
-              </div>
+              </h4>
               <p className="w-[227px] xl:w-[266px] 3xl:w-[350px] font-manrope text-teal-400 text-[14px] 3xl:text-[18px] relative font-semibold tracking-[0] leading-[normal]">
                 {desc}
               </p>

@@ -21,7 +21,7 @@ const Services = () => {
 
           <div className="relative bg-teal-400 z-10">
             <div className="flex flex-col pt-16 pb-[88px] px-4">
-              <div className="flex justify-center mb-5 md:mb-10 3xl:mb-80">
+              <div className="flex justify-center mb-5 md:mb-10 3xl:mb-[80px]">
                 <Title
                   color="text-[#FFFFFF]"
                   textCenter

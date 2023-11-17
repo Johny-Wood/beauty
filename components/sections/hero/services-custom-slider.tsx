@@ -3,8 +3,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useScopedI18n } from '@/app/locales/client'
 import clsx from 'clsx'
-import ArrowIcon from './icons/ArrowIcon'
-import ServicesItem from './utils/services-item'
+import ArrowIcon from '@/components/icons/ArrowIcon'
+import ServicesItem from './services-item'
 
 const ServicesCustomSlider = () => {
   const scopedT = useScopedI18n('servicesBlock')

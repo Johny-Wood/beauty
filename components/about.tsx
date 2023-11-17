@@ -47,7 +47,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="w-full h-full mb-6">
+      <div className="flex justify-center w-full h-full mb-6">
         <Slider
           swiperOptions={{
             spaceBetween: 20,
