@@ -3,17 +3,25 @@ import clsx from 'clsx'
 
 type Props = {
   textCenter?: boolean
+  textProps?: string
   color?: string
   maxWidth?: string
   children: string | JSX.Element | JSX.Element[] | ReactNode
 }
 
-const Title: React.FC<Props> = ({ textCenter, color, maxWidth, children }) => {
+const Title: React.FC<Props> = ({
+  textCenter,
+  textProps,
+  color,
+  maxWidth,
+  children,
+}) => {
   return (
     <div
       className={clsx(
         maxWidth && maxWidth,
         textCenter && 'text-center',
+        textProps && textProps,
         color ? color : 'text-teal-900',
       )}
     >

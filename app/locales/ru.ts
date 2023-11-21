@@ -21,6 +21,7 @@ export default {
     allServices: 'Все услуги',
     learnMore: 'Узнать больше',
     chooseService: 'Выбрать услугу',
+    getConsultation: 'Получить консультацию',
   },
   headerTop: {
     address: 'Дубининская ул., 9, cтр. 1, Москва, Россия, 115054',
@@ -180,6 +181,11 @@ export default {
   reviews: {
     title: 'Отзывы от наших посетителей',
     subtitle: 'Реальные видео-отзывы',
+  },
+  callback: {
+    title: 'Обратный звонок',
+    subtitle:
+      'Перезвоним Вам для уточнения деталей и подтверждения записи на прием',
   },
 
   // welcome: 'Hello {name}!',

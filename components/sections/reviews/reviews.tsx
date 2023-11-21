@@ -27,7 +27,7 @@ const Reviews = () => {
           {scopedT('subtitle')}
         </p>
       </div>
-      <div className="flex justify-center w-full pl-4 md:px-[80px] lg:mb-[40px]">
+      <div className="flex justify-center w-full pl-4 md:px-[80px] lg:mb-[110px]">
         <Slider
           arrows
           arrowsBottom

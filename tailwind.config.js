@@ -79,6 +79,8 @@ module.exports = {
         'about-mobile-bg': "url('/images/about-bg-mobile.svg')",
         'about-3xl-bg': "url('/images/about-bg-3xl.svg')",
         'services-mobile-bg': "url('/images/services-bg-mobile.svg')",
+        'callback-mobile-bg': "url('/images/callback-bg-mobile.svg')",
+        'callback-bg': "url('/images/callback-bg.svg')",
       },
       spacing: {
         '9/16': '56.25%',
