@@ -1,4 +1,6 @@
 import clsx from 'clsx'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,7 +8,8 @@ type Props = {
   as?: 'link' | 'button'
   href?: string
   onClick?: () => void
-  icon?: string
+  icon?: string | StaticImport
+  alt?: string
   bgColor: string
   color?: string
   border?: boolean
@@ -20,6 +23,7 @@ const Button: React.FC<Props> = ({
   href,
   onClick,
   icon,
+  alt,
   bgColor,
   color,
   border,
@@ -46,10 +50,14 @@ const Button: React.FC<Props> = ({
     <>
       {as === 'link' && href ? (
         <Link className={clsx(classes)} href={href}>
+          {icon && alt && <Image src={icon} alt={alt} />}
+
           {children}
         </Link>
       ) : (
         <button className={clsx(classes, 'border-0')} onClick={onClick}>
+          {icon && alt && <Image src={icon} alt={alt} />}
+
           {children}
         </button>
       )}

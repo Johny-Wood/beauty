@@ -7,6 +7,7 @@ import Header from '@/components/ui/header/header'
 // import Footer from '@/components/ui/footer'
 import { getCurrentLocale, getI18n } from '../locales/server'
 import { I18nProviderClient } from '../locales/client'
+import Footer from '@/components/ui/footer/footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -38,7 +39,7 @@ export default function RootLayout({
           <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
             <Header />
             <main className="grow">{children}</main>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </body>
       </html>

@@ -187,6 +187,10 @@ export default {
     subtitle:
       'Перезвоним Вам для уточнения деталей и подтверждения записи на прием',
   },
+  footer: {
+    navigation: 'Навигация',
+    map: 'Мы на карте:',
+  },
 
   // welcome: 'Hello {name}!',
   // 'about.you': 'Hello {name}! You have {age} yo',
