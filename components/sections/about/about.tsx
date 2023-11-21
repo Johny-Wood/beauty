@@ -2,15 +2,15 @@
 
 import React from 'react'
 import { useScopedI18n } from '@/app/locales/client'
-import useIsMobile from './utils/isMobile'
+import useIsMobile from '../../utils/isMobile'
 
-import VideoPlayer from './ui/video-player/video-player'
-import Title from './ui/typography/title'
-import AccentText from './ui/typography/accent-text'
-import CoveredCard from './ui/covered-card'
-import Slider from './ui/slider/slider'
-import Button from './ui/button'
-import Collaborations from './collaborations'
+import VideoPlayer from '../../ui/video-player/video-player'
+import Title from '../../ui/typography/title'
+import AccentText from '../../ui/typography/accent-text'
+import CoveredCard from '../../ui/covered-card'
+import Slider from '../../ui/slider/slider'
+import Button from '../../ui/button'
+import Collaborations from '../../collaborations'
 
 const About = () => {
   const scopedT = useScopedI18n('about')
@@ -36,13 +36,15 @@ const About = () => {
           </p>
         </div>
 
-        <div className="md:relative md:max-w-[694px] 3xl:max-w-[850px] w-full md:after:absolute md:after:top-0 md:after:right-0 lg:after:h-full md:after:h-[105%] md:after:translate-x-[62%] md:after:-translate-y-[5%] lg:after:translate-x-[65%] 3xl:after:translate-x-[72%] md:after:bg-about-bg 3xl:after:bg-about-3xl-bg md:after:bg-no-repeat md:after:w-full 3xl:after:bg-[length:auto]">
+        <div className="md:relative md:max-w-[694px] 3xl:max-w-[850px] w-full h-[220px] md:h-[318px] 3xl:h-[420px] md:after:absolute md:after:top-0 md:after:right-0 lg:after:h-full md:after:h-[105%] md:after:translate-x-[62%] md:after:-translate-y-[5%] lg:after:translate-x-[65%] 3xl:after:translate-x-[72%] md:after:bg-about-bg 3xl:after:bg-about-3xl-bg md:after:bg-no-repeat md:after:w-full 3xl:after:bg-[length:auto]">
           <VideoPlayer
             url="https://vimeo.com/243556536"
-            height={isMobile ? '220px' : '318px'}
+            width="100%"
+            height="100%"
+            // height={isMobile ? '220px' : '318px'}
             light="/images/video-preview.png"
             controls
-            style={{ maxWidth: isMobile ? '397px' : '644px' }}
+            // style={{ maxWidth: isMobile ? '397px' : '644px' }}
             playsinline
           />
         </div>

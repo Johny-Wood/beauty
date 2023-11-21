@@ -13,17 +13,25 @@ import clsx from 'clsx'
 type Props = {
   swiperOptions?: SwiperProps
   arrows?: boolean
+  arrowsBottom?: boolean
   children: string | JSX.Element | JSX.Element[] | ReactNode
 }
 
-const Slider: React.FC<Props> = ({ swiperOptions, arrows, children }) => {
+const Slider: React.FC<Props> = ({
+  swiperOptions,
+  arrows,
+  arrowsBottom,
+  children,
+}) => {
   const slides = Children.toArray(children)
 
   return (
     <Swiper
       className={clsx(
         'custom-swiper',
-        arrows && '!pb-[56px] lg:!pb-0 lg:!px-[129px]',
+        arrows && '!pb-[56px]',
+        arrows && !arrowsBottom && 'lg:!pb-0 lg:!px-[129px]',
+        arrows && arrowsBottom && 'lg:!pb-20',
       )}
       modules={[Navigation]}
       navigation={
@@ -40,7 +48,14 @@ const Slider: React.FC<Props> = ({ swiperOptions, arrows, children }) => {
         <SwiperSlide>{slide}</SwiperSlide>
       ))}
       {arrows && (
-        <div className="absolute z-10 bottom-0 lg:bottom-1/2 lg:-translate-y-1/2 lg:left-0 lg:right-0 flex items-center justify-center lg:justify-between gap-x-2 w-full">
+        <div
+          className={clsx(
+            'absolute z-10 bottom-0 flex items-center justify-center gap-x-2 w-full',
+            !arrowsBottom &&
+              'lg:bottom-1/2 lg:-translate-y-1/2 lg:left-0 lg:right-0 lg:justify-between',
+            arrowsBottom && 'lg:left-[108px] lg:bottom-0 lg:justify-normal',
+          )}
+        >
           <ArrowPrev />
           <ArrowNext />
         </div>

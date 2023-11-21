@@ -177,6 +177,10 @@ export default {
       },
     },
   },
+  reviews: {
+    title: 'Отзывы от наших посетителей',
+    subtitle: 'Реальные видео-отзывы',
+  },
 
   // welcome: 'Hello {name}!',
   // 'about.you': 'Hello {name}! You have {age} yo',
