@@ -22,7 +22,7 @@ const Hero: React.FC<Props> = ({ service }) => {
   const scopedT = useScopedI18n('hero')
   const scopedServicesT = useScopedI18n('servicesBlock')
   const isMobile = useIsMobile()
-  console.log(service.slug)
+  console.log(service?.slug)
 
   return (
     <section className="bg-services-hero-mobile-bg md:bg-services-hero-bg bg-[left_20%] md:bg-[50%_110px] md:bg-cover bg-no-repeat">
@@ -35,7 +35,7 @@ const Hero: React.FC<Props> = ({ service }) => {
                   SYSTEM BEAUTY CONCEPT
                 </h1>
                 <h2 className="text-[45px] font-extrabold text-teal-800 max-w-[615px]">
-                  {scopedServicesT(`${service.slug}.title`)}
+                  {scopedServicesT(`${service?.slug}.title`)}
                 </h2>
               </div>
 
@@ -62,7 +62,7 @@ const Hero: React.FC<Props> = ({ service }) => {
                 SYSTEM BEAUTY CONCEPT
               </h1>
               <h2 className="text-[28px] font-extrabold text-teal-800 text-center max-w-[280px]">
-                {scopedServicesT(`${service.slug}.title`)}
+                {scopedServicesT(`${service?.slug}.title`)}
               </h2>
             </div>
 

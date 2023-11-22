@@ -1,8 +1,10 @@
+import React from 'react'
+import { setStaticParamsLocale } from 'next-international/server'
+import { getStaticParams } from '@/app/locales/server'
 import Callback from '@/components/sections/callback/callback'
 import Experts from '@/components/sections/experts/experts'
 import Hero from '@/components/services/service/sections/Hero/hero'
 import AboutService from '@/components/services/service/sections/about-service/about-service'
-import React from 'react'
 
 const services = [
   {
@@ -46,16 +48,28 @@ const getService = (slug: string) => {
 }
 
 export async function generateStaticParams() {
-  return [{ slug: 'laserCorrection' }, { slug: 'massage' }]
+  const params1 = getStaticParams()
+  const params2 = services
+
+  return [...params1, ...params2]
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
-  const service = getService(params?.slug)
+export default function Page({
+  params: { locale, slug },
+}: {
+  params: {
+    locale: string
+    slug: string
+  }
+}) {
+  setStaticParamsLocale(locale)
+
+  const service = getService(slug)
 
   return (
     <>
       <Hero service={service} />
-      <AboutService slug={params.slug} />
+      <AboutService slug={slug} />
       <div className=" md:pb-[160px] bg-gray-50">
         <Experts />
       </div>
