@@ -13,8 +13,8 @@ const Reviews = () => {
   const isMobile = useIsMobile()
 
   return (
-    <section className="flex flex-col max-w-[1920px] w-full mx-auto bg-gray-50 pt-11 md:pt-[127px] 3xl:pt-[233px]">
-      <div className="flex flex-col items-center gap-y-2 md:gap-y-[10px] mb-4 md:mb-[38px] 3xl:mb-[40px]">
+    <section className="flex flex-col bg-gray-50 pt-11 md:pt-[127px] 3xl:pt-[233px]">
+      <div className="max-w-[1920px] w-full mx-auto flex flex-col items-center gap-y-2 md:gap-y-[10px] mb-4 md:mb-[38px] 3xl:mb-[40px]">
         <Title
           color="text-teal-800"
           textCenter
