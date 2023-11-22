@@ -10,7 +10,7 @@ const Collaborations = () => {
   const isMobile = useIsMobile()
 
   return (
-    <div className="flex flex-col justify-center gap-y-10 md:gap-y-[53px] md:w-full text-sm md:text-[23px]">
+    <div className="max-w-[960px] mx-auto flex flex-col justify-center gap-y-10 md:gap-y-[53px] md:w-full text-sm md:text-[23px]">
       {isMobile && (
         <>
           <div className="flex justify-center">
