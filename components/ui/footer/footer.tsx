@@ -49,7 +49,7 @@ const Footer = () => {
   const scopedHeaderTopT = useScopedI18n('headerTop')
 
   return (
-    <footer className="flex flex-col text-teal-800">
+    <footer className="max-w-[1920px] w-full mx-auto flex flex-col text-teal-800">
       <div className="flex flex-col lg:flex-row p-4 md:py-[40px] md:px-[80px]">
         <div className="mb-[24px] lg:mb-0 md:mr-[82px]">
           <Logo />

@@ -81,6 +81,8 @@ module.exports = {
         'services-mobile-bg': "url('/images/services-bg-mobile.svg')",
         'callback-mobile-bg': "url('/images/callback-bg-mobile.svg')",
         'callback-bg': "url('/images/callback-bg.svg')",
+        'services-hero-bg': "url('/images/services-hero-bg.svg')",
+        'services-hero-mobile-bg': "url('/images/services-hero-mobile-bg.svg')",
       },
       spacing: {
         '9/16': '56.25%',

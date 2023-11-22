@@ -45,6 +45,13 @@ export default {
       longDesc:
         'Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.',
     },
+    laserResurfacing: {
+      title: 'Лазерные шлифовки',
+      longDesc:
+        'Перед процедурой врач проведет осмотр, чтобы определить, каких результатов можно достичь и как ваши физические особенности, например тон и толщина кожи, могут повлиять на результаты процедуры.',
+      benefits:
+        'от мелких морщин;возрастной пигментации;неровного тона или текстуры кожи;солнечных ожогов;легких и умеренных шрамов от акне;увеличенных сальных желез на носу.',
+    },
     alexandrite: {
       title: 'Трехволновой диод александрит',
     },
