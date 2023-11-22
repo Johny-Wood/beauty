@@ -26,33 +26,35 @@ const links = [
 
 const FooterBottom = () => {
   return (
-    <ul className="flex flex-wrap justify-center lg:justify-normal items-center gap-[12px] lg:gap-[36px] py-4 lg:py-[12px] px-6 lg:px-[80px] bg-[#CFCA47]">
-      {links.map((link, i) => {
-        if (i === links.length - 2) {
-          return (
-            <li key={i} className="grow">
-              <Link
-                href={link.href}
-                className="text-xs text-teal-800 font-semibold font-montserrat text-center"
-              >
-                {link.name}
-              </Link>
-            </li>
-          )
-        } else {
-          return (
-            <li key={i}>
-              <Link
-                href={link.href}
-                className="text-xs text-teal-800 font-semibold font-montserrat text-center"
-              >
-                {link.name}
-              </Link>
-            </li>
-          )
-        }
-      })}
-    </ul>
+    <div className="bg-[#CFCA47]">
+      <ul className="max-w-[1920px] w-full mx-auto flex flex-wrap justify-center lg:justify-normal items-center gap-[12px] lg:gap-[36px] py-4 lg:py-[12px] px-6 lg:px-[80px]">
+        {links.map((link, i) => {
+          if (i === links.length - 2) {
+            return (
+              <li key={i} className="grow">
+                <Link
+                  href={link.href}
+                  className="text-xs text-teal-800 font-semibold font-montserrat text-center"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            )
+          } else {
+            return (
+              <li key={i}>
+                <Link
+                  href={link.href}
+                  className="text-xs text-teal-800 font-semibold font-montserrat text-center"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            )
+          }
+        })}
+      </ul>
+    </div>
   )
 }
 

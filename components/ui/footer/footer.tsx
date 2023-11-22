@@ -2,18 +2,16 @@
 
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useScopedI18n } from '@/app/locales/client'
 import Logo from '../logo'
 import Button from '../button'
 import Map from '../Map/map'
+import FooterBottom from './footer-bottom'
 
 import Phone from '@/components/icons/Phone'
 import IconButton from '../icon-button'
 import TelegramIcon from '@/components/icons/TelegramIcon'
 import InstagramIcon from '@/components/icons/Instagram'
-import MapImage from '/public/images/map.jpg'
-import FooterBottom from './footer-bottom'
 
 const links = [
   {
@@ -49,8 +47,8 @@ const Footer = () => {
   const scopedHeaderTopT = useScopedI18n('headerTop')
 
   return (
-    <footer className="max-w-[1920px] w-full mx-auto flex flex-col text-teal-800">
-      <div className="flex flex-col lg:flex-row p-4 md:py-[40px] md:px-[80px]">
+    <footer className="flex flex-col text-teal-800">
+      <div className="max-w-[1920px] w-full mx-auto flex flex-col lg:flex-row p-4 md:py-[40px] md:px-[80px]">
         <div className="mb-[24px] lg:mb-0 md:mr-[82px]">
           <Logo />
         </div>
