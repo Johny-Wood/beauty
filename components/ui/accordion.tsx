@@ -40,7 +40,7 @@ export default function Accordion({
     >
       <button
         className={clsx(
-          'relative flex items-center p-5 w-full py-[11.5px] font-montserrat font-semibold text-teal-800 text-sm text-left bg-[#FFFFFF] rounded-lg shadow-outline',
+          'relative flex items-center p-5 w-full py-[11.5px] font-montserrat font-semibold text-teal-800 text-sm 3xl:text-lg text-left bg-[#FFFFFF] rounded-lg shadow-outline',
           !accordionOpen && 'h-full',
         )}
         onClick={(e) => {
