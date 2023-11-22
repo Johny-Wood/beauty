@@ -20,8 +20,8 @@ const About = () => {
   const isMobile = useIsMobile()
 
   return (
-    <section className="max-w-[1920px] mx-auto flex flex-col items-center py-[40px] md:py-[60px] md:gap-y-[62px] 3xl:gap-y-[80px] px-4 md:px-[100px] bg-gray-50">
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-y-4 md:gap-x-[60px] mb-4 pt-[20px] bg-about-mobile-bg bg-[center_-43px] md:bg-none bg-no-repeat md:w-full">
+    <section className="flex flex-col items-center py-[40px] md:py-[60px] md:gap-y-[62px] 3xl:gap-y-[80px]  bg-gray-50">
+      <div className="max-w-[1920px] mx-auto px-4 md:px-[100px] flex flex-col md:flex-row items-start md:items-center gap-y-4 md:gap-x-[60px] mb-4 pt-[20px] bg-about-mobile-bg bg-[center_-43px] md:bg-none bg-no-repeat md:w-full">
         <div className="flex flex-col items-start gap-y-2 md:order-1">
           <Title
             color="text-teal-800"
@@ -41,15 +41,13 @@ const About = () => {
             url="https://vimeo.com/243556536"
             width="100%"
             height="100%"
-            // height={isMobile ? '220px' : '318px'}
             light="/images/video-preview.png"
             controls
-            // style={{ maxWidth: isMobile ? '397px' : '644px' }}
             playsinline
           />
         </div>
       </div>
-      <div className="flex justify-center w-full h-full mb-6">
+      <div className="flex justify-center w-full h-full mb-6 pl-4 md:pl-[100px]">
         <Slider
           swiperOptions={{
             spaceBetween: 20,
