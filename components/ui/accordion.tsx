@@ -36,7 +36,6 @@ export default function Accordion({
       className={clsx(
         !accordionOpen && 'max-h-[55px]',
         accordionOpen && 'max-h-full',
-        'h-full',
       )}
     >
       <button
