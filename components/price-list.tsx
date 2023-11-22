@@ -37,7 +37,9 @@ const PriceListItem: React.FC<Service> = ({ id, title, price }) => {
   return (
     <div className="flex justify-between items-center py-[15px] pr-[15px] pl-[30px] bg-[#DCEFF1] rounded-[9px] font-montserrat">
       <div className="flex gap-x-[30px] text-teal-800 font-semibold">
-        <p className="text-[13px] max-w-[475px]">{title}</p>
+        <p className="3xl:text-lg text-[13px] max-w-[475px] 3xl:max-w-[660px]">
+          {title}
+        </p>
         <p className="text-lg">{`${price} ${scopedT('currency')}`}</p>
       </div>
       <div className="max-w-[160px] w-full">
