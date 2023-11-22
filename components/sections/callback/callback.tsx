@@ -17,7 +17,7 @@ const Callback = () => {
   return (
     <section className="lg:bg-[#DCEFF1] lg:bg-callback-bg lg:bg-no-repeat lg:bg-cover lg:bg-left-top">
       <div className="max-w-[1920px] mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center lg:px-[80px]">
-        <div className="lg:order-1 lg:-mt-[70px] lg:mb-[70px] lg:max-w-[680px] lg:w-full lg:max-h-[645px] lg:h-full">
+        <div className="bg-gray-50 lg:order-1 lg:-mt-[70px] lg:mb-[70px] lg:max-w-[680px] lg:w-full lg:max-h-[645px] lg:h-full">
           <CoveredImage
             coverPosition={isMobile ? 'top' : 'left'}
             src={WomenImage}
