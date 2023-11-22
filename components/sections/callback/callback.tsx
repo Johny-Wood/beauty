@@ -25,7 +25,7 @@ const Callback = () => {
           />
         </div>
 
-        <div className="relative z-10 md:z-0 -mt-[10px] md:mt-0 px-4 md:px-0 3xl:px-[100px] pt-[48px] md:pt-[85px] 3xl:pt-[90px] pb-[38px] md:pb-[85px] 3xl:pb-[69px] rounded-t-xl bg-[#DCEFF1] lg:bg-none lg:bg-transparent bg-callback-mobile-bg bg-no-repeat bg-cover bg-right-top">
+        <div className="relative z-10 md:z-0 -mt-[10px] md:mt-0 px-4 lg:px-0 3xl:px-[100px] pt-[48px] md:pt-[85px] 3xl:pt-[90px] pb-[38px] md:pb-[85px] 3xl:pb-[69px] rounded-t-xl bg-[#DCEFF1] lg:bg-none lg:bg-transparent bg-callback-mobile-bg bg-no-repeat bg-cover bg-right-top">
           <div className="flex flex-col gap-y-2 md:gap-y-[10px] mb-4 md:mb-[38px] 3xl:mb-[40px]">
             <Title color="text-teal-800" textCenter textProps="lg:text-left">
               {scopedT('title')}

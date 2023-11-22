@@ -85,7 +85,7 @@ const About = () => {
         </Slider>
       </div>
 
-      <div className="flex flex-col gap-y-2 w-full md:flex-row md:justify-center gap-x-[10px] mb-[60px]">
+      <div className="px-4 md:px-[100px] flex flex-col gap-y-2 w-full md:flex-row md:justify-center gap-x-[10px] mb-[60px]">
         <Button
           width="w-full md:w-fit"
           bgColor="bg-[#E5FDFF]"
