@@ -38,6 +38,7 @@ export default {
     section: {
       titleAccent: 'Узнайте больше об ',
       title: 'интересующей услуге',
+      ask: 'Задайте свой вопрос, мы Вам поможем',
     },
     laserEpilation: {
       title: 'Лазерная эпиляция',

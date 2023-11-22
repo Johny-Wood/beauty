@@ -4,8 +4,6 @@ import React from 'react'
 import { useScopedI18n } from '@/app/locales/client'
 import Title from '../../ui/typography/title'
 import AccentText from '../../ui/typography/accent-text'
-import Accordion from '../../ui/accordion'
-import LaserRemovalIcon from '../../icons/LaserRemoval'
 import ServicesList from './services-list'
 import ConsultationForm from '@/components/consultation-form'
 
@@ -40,6 +38,11 @@ const Services = () => {
               </div>
 
               <div className="3xl:max-w-[1276px] md:max-w-[1027px] w-full mx-auto">
+                <div className="hidden md:block max-w-[261px] mb-[20px]">
+                  <h5 className="text-lg 3xl:text-2xl text-gray-50 font-extrabold leading-[115.1%]">
+                    {scopedT('section.ask')}
+                  </h5>
+                </div>
                 <ConsultationForm />
               </div>
             </div>
