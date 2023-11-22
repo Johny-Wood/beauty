@@ -45,7 +45,7 @@ const Form = () => {
         {scopedButtonsT('getConsultation')}
       </Button>
 
-      <span className="lg:w-[413px] w-full">
+      <span className="flex justify-center lg:w-[413px] w-full">
         <p className="text-xs text-teal-800 font-montserrat font-semibold text-center lg:max-w-[349px]">
           By clicking Sign Up you're confirming that you agree with our Terms
           and Conditions.
