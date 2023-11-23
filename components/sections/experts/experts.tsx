@@ -49,7 +49,7 @@ const Experts = () => {
           </p>
         </div>
 
-        <div className="flex justify-center w-full pl-4 md:px-[80px] lg:mb-[40px]">
+        <div className="relative max-w-[1224px] 3xl:max-w-[1442px] mx-auto flex justify-center w-full pl-4 md:px-[80px] lg:mb-[40px]">
           <Slider
             swiperOptions={{
               spaceBetween: 4,
@@ -61,6 +61,7 @@ const Experts = () => {
               },
             }}
             arrows
+            arrowsMdOutside
           >
             <ExpertCard
               id={0}
@@ -106,14 +107,36 @@ const Experts = () => {
                 'трихолог',
               ]}
             />
+            <ExpertCard
+              id={4}
+              photo={Expert3Photo}
+              workExperience={19}
+              specializations={[
+                'трихолог',
+                'дерматолог',
+                'дерматолог',
+                'трихолог',
+              ]}
+            />
+            <ExpertCard
+              id={5}
+              photo={Expert3Photo}
+              workExperience={19}
+              specializations={[
+                'трихолог',
+                'дерматолог',
+                'дерматолог',
+                'трихолог',
+              ]}
+            />
           </Slider>
         </div>
 
-        <div className="hidden lg:block lg:max-w-[1064px] 3xl:max-w-[1286px] lg:w-full lg:mx-auto lg:mb-[20px]">
+        <div className="hidden xl:block xl:max-w-[1064px] 3xl:max-w-[1286px] xl:w-full xl:mx-auto xl:mb-[20px]">
           <PriceList services={servicesList} />
         </div>
 
-        <div className="hidden lg:flex lg:justify-center">
+        <div className="hidden xl:flex xl:justify-center">
           <Button
             bgColor="bg-teal-400"
             color="text-[#FFFFFF]"
