@@ -49,7 +49,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col text-teal-800">
       <div className="max-w-[1920px] w-full mx-auto flex flex-col lg:flex-row p-4 md:py-[40px] md:px-[80px]">
-        <div className="mb-[24px] lg:mb-0 md:mr-[82px]">
+        <div className="mb-[24px] lg:mb-0 md:mr-[25px] xl:mr-[82px]">
           <Logo />
         </div>
 
@@ -123,7 +123,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="relative rounded-lg overflow-hidden min-h-[240px] lg:min-h-[182px] 3xl:max-h-[240px] h-full lg:min-w-[520px] 3xl:min-w-[630px]">
+          <div className="relative rounded-lg overflow-hidden min-h-[240px] lg:min-h-[182px] 3xl:max-h-[240px] h-full lg:min-w-[375px] xl:min-w-[520px] 3xl:min-w-[630px]">
             <Map />
           </div>
         </div>
