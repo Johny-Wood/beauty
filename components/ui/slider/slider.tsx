@@ -16,6 +16,7 @@ type Props = {
   arrows?: boolean
   arrowsBottom?: boolean
   arrowsMdOutside?: boolean
+  className?: string
   children: string | JSX.Element | JSX.Element[] | ReactNode
 }
 
@@ -24,6 +25,7 @@ const Slider: React.FC<Props> = ({
   arrows,
   arrowsBottom,
   arrowsMdOutside,
+  className,
   children,
 }) => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass>()
@@ -47,6 +49,7 @@ const Slider: React.FC<Props> = ({
         <Swiper
           className={clsx(
             'custom-swiper',
+            className && className,
             arrows && '!pb-[56px]',
             arrows && !arrowsBottom && 'lg:!pb-0 lg:!px-[129px]',
             arrows && arrowsBottom && 'lg:!pb-20',

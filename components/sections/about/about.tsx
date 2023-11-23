@@ -47,12 +47,14 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center w-full h-full mb-6 pl-4 md:pl-[100px]">
+      {/* md:pl-[100px] */}
+      <div className="flex justify-center w-full h-full mb-6 pl-4 md:pl-0">
         <Slider
           swiperOptions={{
             spaceBetween: 20,
             slidesPerView: 'auto',
           }}
+          className="md:!pl-[100px] md:!ml-0"
         >
           <CoveredCard
             coverPosition="bottom"
