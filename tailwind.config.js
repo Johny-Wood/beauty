@@ -67,6 +67,7 @@ module.exports = {
         '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.15)',
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.04)',
         outline: '0px 0px 10px 0px rgba(56, 124, 129, 0.30)',
+        header: '0px 3.03223px 15.16114px 0px rgba(56, 124, 129, 0.10)',
         none: 'none',
       },
       backgroundImage: {

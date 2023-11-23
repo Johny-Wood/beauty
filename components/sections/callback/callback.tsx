@@ -20,6 +20,7 @@ const Callback = () => {
         <div className="bg-gray-50 lg:bg-transparent lg:order-1 lg:-mt-[70px] lg:mb-[70px] lg:max-w-[680px] lg:w-full lg:max-h-[645px] lg:h-full">
           <CoveredImage
             coverPosition={isMobile ? 'top' : 'left'}
+            mobile
             src={WomenImage}
             alt={'women hydrated skin'}
           />

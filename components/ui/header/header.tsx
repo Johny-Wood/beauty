@@ -9,6 +9,7 @@ import useIsMobile from '@/components/utils/isMobile'
 import Button from '../button'
 import Phone from '@/components/icons/Phone'
 import MenuList from '../menu-list'
+import LanguageChanger from '@/components/language-changer'
 
 type Props = {}
 
@@ -17,7 +18,7 @@ const Header = (props: Props) => {
   const isMobile = useIsMobile()
 
   return (
-    <header className="relative max-w-[1920px] mx-auto w-full">
+    <header className="relative max-w-[1920px] mx-auto w-full shadow-header">
       <div className="flex justify-between md:flex-col px-4 md:px-20 3xl:px-[100px] py-3 md:py-0">
         {isMobile && (
           <>
@@ -28,13 +29,13 @@ const Header = (props: Props) => {
 
         {!isMobile && (
           <>
-            <HeaderTop />
+            {/* <HeaderTop /> */}
             <div className="flex justify-between gap-x-[10px] py-3">
               <Logo width={102} />
 
               <MenuList />
 
-              <div className="flex gap-y-[10px] md:gap-x-[10px] w-full max-w-[341px] justify-between">
+              <div className="flex gap-y-[10px] md:gap-x-[10px] items-center w-full max-w-[341px] justify-between">
                 <div className="max-w-[200px]">
                   <Button bgColor="bg-teal-800" href="#">
                     <Phone />
@@ -45,6 +46,9 @@ const Header = (props: Props) => {
                   <Button as="link" bgColor="bg-teal-400" href="#">
                     {scopedTButtons('apointment')}
                   </Button>
+                </div>
+                <div>
+                  <LanguageChanger />
                 </div>
               </div>
             </div>
