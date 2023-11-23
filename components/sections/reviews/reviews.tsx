@@ -27,7 +27,8 @@ const Reviews = () => {
           {scopedT('subtitle')}
         </p>
       </div>
-      <div className="flex justify-center w-full pl-4 md:pl-[80px] lg:mb-[110px]">
+      {/* md:pl-[80px] */}
+      <div className="flex justify-center w-full pl-4 md:pl-0 lg:mb-[110px]">
         <Slider
           arrows
           arrowsBottom
@@ -40,6 +41,7 @@ const Reviews = () => {
               },
             },
           }}
+          className="md:!pl-[80px]"
         >
           <div className="w-[248px] md:w-[315px] 3xl:w-[415px] h-[372px] md:h-[472px] 3xl:h-[622px]">
             <VideoPlayer
