@@ -33,7 +33,7 @@ const AboutService = ({ slug }: { slug: string }) => {
         <div>
           <ul className="px-[18px]">
             {benefits.map((item, i) => (
-              <li className="text-sm 3xl:text-lg text-gray-400 font-semibold list-disc marker:text-gray-400">
+              <li className="relative text-sm 3xl:text-lg text-gray-400 font-semibold before:absolute before:-left-[24px] before:bg-benefits-marker before:bg-cover before:block before:w-[24px] before:h-[24px]">
                 {item}
                 {i !== benefits.length - 1 ? ';' : ''}
               </li>
@@ -50,26 +50,6 @@ const AboutService = ({ slug }: { slug: string }) => {
       <div className="hidden md:flex justify-end w-full">
         <CoveredImage coverPosition="left" src={WomenImage} alt="women" />
       </div>
-
-      {/* <div className="flex flex-col gap-y-[80px] max-w-[847px] w-full min-w-[100px] shrink-1"> */}
-      {/*   <div className="flex flex-col self-center gap-y-2 max-w-[648px] text-center"> */}
-      {/*     <h1 className="text-lg font-extrabold text-orange-500 uppercase"> */}
-      {/*       SYSTEM BEAUTY CONCEPT */}
-      {/*     </h1> */}
-      {/*     <h2 className="text-[45px] font-extrabold text-teal-800 max-w-[615px]"> */}
-      {/*       {scopedServicesT(`${service.slug}.title`)} */}
-      {/*     </h2> */}
-      {/*   </div> */}
-
-      {/* <div> */}
-      {/*   <p className="max-w-[455px] text-lg text-gray-400 font-extrabold"> */}
-      {/*     {scopedT('desc')} */}
-      {/*   </p> */}
-      {/* </div> */}
-
-      {/* //   <div className="flex flex-col gap-y-[20px]"> */}
-      {/* //   </div> */}
-      {/* // </div> */}
     </section>
   )
 }

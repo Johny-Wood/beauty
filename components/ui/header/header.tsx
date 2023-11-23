@@ -35,7 +35,7 @@ const Header = (props: Props) => {
 
               <MenuList />
 
-              <div className="flex gap-y-[10px] md:gap-x-[10px] items-center w-full max-w-[341px] justify-between">
+              <div className="flex gap-y-[10px] md:gap-x-[10px] items-center w-full max-w-[410px] justify-between">
                 <div className="max-w-[200px]">
                   <Button bgColor="bg-teal-800" href="#">
                     <Phone />
@@ -47,7 +47,7 @@ const Header = (props: Props) => {
                     {scopedTButtons('apointment')}
                   </Button>
                 </div>
-                <div>
+                <div className="ml-[10px]">
                   <LanguageChanger />
                 </div>
               </div>

@@ -6,7 +6,7 @@ type Props = {
   src: string | StaticImageData
   coverPosition: 'top' | 'left' | 'right'
   alt: string
-  mobile: boolean
+  mobile?: boolean
 }
 
 const CoveredImage: React.FC<Props> = ({ src, alt, coverPosition, mobile }) => {
