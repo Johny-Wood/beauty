@@ -7,6 +7,7 @@ import AccentText from '@/components/ui/typography/accent-text'
 import CoveredImage from '@/components/ui/covered-image'
 
 import WomenImage from 'public/images/laserResurfacing.jpg'
+import Button from '@/components/ui/button'
 
 const AboutService = ({ slug }: { slug: string }) => {
   const scopedServicesT = useScopedI18n('servicesBlock')
@@ -44,6 +45,27 @@ const AboutService = ({ slug }: { slug: string }) => {
           <p className="text-sm 3xl:text-lg text-gray-400 font-semibold md:max-w-[410px] 3xl:max-w-[450px]">
             {scopedServicesT(`${slug}.longDesc`)}
           </p>
+        </div>
+
+        <div className="flex gap-x-[10px]">
+          <Button
+            width="w-fit !py-[7px] 3xl:!py-[9px] !px-[15px]"
+            color="text-teal-400 !text-xs 3xl:text-[16px]"
+            bgColor="bg-transparent"
+            border
+            borderColor="border-teal-400"
+          >
+            {scopedServicesT(`${slug}.relatedServices.0`)}
+          </Button>
+          <Button
+            width="w-fit !py-[7px] 3xl:!py-[9px] !px-[15px]"
+            color="text-teal-400 !text-xs 3xl:text-[16px]"
+            bgColor="bg-transparent"
+            border
+            borderColor="border-teal-400"
+          >
+            {scopedServicesT(`${slug}.relatedServices.1`)}
+          </Button>
         </div>
       </div>
 
