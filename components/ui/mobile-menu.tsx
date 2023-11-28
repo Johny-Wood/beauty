@@ -44,6 +44,19 @@ export default function MobileMenu() {
     return () => document.removeEventListener('keydown', keyHandler)
   })
 
+  // disable scroll if menu open
+  useEffect(() => {
+    if (mobileNavOpen) {
+      if (document) {
+        document.body.style.overflow = 'hidden'
+      }
+    } else {
+      if (document) {
+        document.body.style.overflow = 'auto'
+      }
+    }
+  }, [mobileNavOpen])
+
   return (
     <div className="flex md:hidden">
       {/* Hamburger button */}
@@ -117,11 +130,11 @@ export default function MobileMenu() {
             <LanguageChanger />
           </div>
           {/* <HeaderTop /> */}
-          <div className="flex justify-center py-[22px] bg-gray-500">
-            <h3 className="text-[20px] text-teal-800 font-extrabold">
-              {scopedT('callToAction')}
-            </h3>
-          </div>
+          {/* <div className="flex justify-center py-[22px] bg-gray-500"> */}
+          {/*   <h3 className="text-[20px] text-teal-800 font-extrabold"> */}
+          {/*     {scopedT('callToAction')} */}
+          {/*   </h3> */}
+          {/* </div> */}
         </Transition>
       </div>
     </div>
