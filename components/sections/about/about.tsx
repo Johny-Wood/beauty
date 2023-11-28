@@ -48,7 +48,7 @@ const About = () => {
         </div>
       </div>
       {/* md:pl-[100px] */}
-      <div className="flex justify-center w-full h-full mb-6 pl-4 md:pl-0">
+      <div className="flex justify-center max-w-[1920px] w-full h-full mb-6 pl-4 md:pl-0">
         <Slider
           swiperOptions={{
             spaceBetween: 20,
