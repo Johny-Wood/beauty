@@ -71,8 +71,8 @@ module.exports = {
         none: 'none',
       },
       backgroundImage: {
-        'hero-pattern': "url('/images/hero-bg.svg')",
-        'hero-pattern-desktop': "url('/images/hero-bg-desktop.svg')",
+        'hero-pattern': "url('/images/hero-bg-min.svg')",
+        'hero-pattern-desktop': "url('/images/hero-bg-desktop-min.svg')",
         'hero-pattern-right-desktop':
           "url('/images/hero-bg-right-desktop.svg')",
         'contacts-pattern': "url('/images/contacts-bg.svg')",

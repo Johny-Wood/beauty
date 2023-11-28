@@ -13,7 +13,8 @@ const Services = () => {
   return (
     <section className="py-[26px] bg-gray-50">
       <div className="bg bg-teal-400">
-        <div className="relative max-w-[1920px] mx-auto bg-hero-pattern-desktop bg-no-repeat bg-right-top bg-cover">
+        {/* bg-hero-pattern-desktop */}
+        <div className="relative max-w-[1920px] mx-auto  bg-no-repeat bg-right-top bg-cover">
           <div className="absolute max-w-[1900px] w-full h-[26px] left-0 right-0 -top-[7px] bg-orange-500 rounded-[8px] rotate-[-177.31deg] md:rotate-[-178.31deg] 2xl:rotate-[-179.31deg]" />
           <div className="absolute max-w-[1900px] w-full h-[26px] right-0 -bottom-[7px] bg-orange-500 rounded-[8px] rotate-[-177.31deg] md:rotate-[-178.31deg] 2xl:rotate-[-179.31deg]" />
 

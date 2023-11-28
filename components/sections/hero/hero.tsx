@@ -14,9 +14,9 @@ import WomenImage from '/public/images/women.jpg'
 const Hero = () => {
   const scopedT = useScopedI18n('hero')
   const isMobile = useIsMobile()
-
+  // bg-hero-pattern md:bg-hero-pattern-desktop
   return (
-    <section className="bg-hero-pattern md:bg-hero-pattern-desktop md:bg-bottom md:bg-cover md:bg-no-repeat">
+    <section className="relative md:bg-bottom md:bg-cover bg-no-repeat">
       <div className="max-w-[1920px] mx-auto flex flex-col md:flex-row md:justify-between md:items-center md:gap-x-[50px] pt-[48px]  md:pt-[22px] md:pb-[55px] md:px-[80px] 3xl:px-[100px]">
         {!isMobile && (
           <>
